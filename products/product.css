@@ -42,7 +42,7 @@ body, html {
   }
 
 /* Navigation links styling */
-.main-container a {
+header a {
     color: #ffffff;
     text-decoration: none;
     margin: 5px 5px;
@@ -50,7 +50,7 @@ body, html {
     transition: color 0.3s;
 }
 
-.main-container a:hover {
+header a:hover {
     color: #ffd700; /* Golden hover effect */
 }
 
@@ -80,83 +80,238 @@ body {
     font-weight: bold;
 }
 
-/* Product container */
-.product {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
 }
 
-/* Individual product card */
-.product > div {
-    background-color: #ffffff; /* White background */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+/* Heading Styling */
+h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 15px;
+    color: #333;
+}
+
+/* Product Container Styling */
+.product1, .product2, .product3, .product4 {
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Product Styling */
+.product11, .product12, .product13, 
+.product21, .product22, .product31, .product32,
+.product41, .product42, .product44, .product45,
+.product46, .product47, .product48, .product49, 
+.product410, .product411, .product412, .product413, 
+.product414, .product415 {
+    position: relative;
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product > div:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+.product11:hover, .product12:hover, .product13:hover, 
+.product21:hover, .product22:hover, .product31:hover, .product32:hover,
+.product41:hover, .product42:hover, .product44:hover, .product45:hover,
+.product46:hover, .product47:hover, .product48:hover, .product49:hover, 
+.product410:hover, .product411:hover, .product412:hover, .product413:hover, 
+.product414:hover, .product415:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Image styling */
-.product img {
-    width: 100%; /* Responsive images */
-    height: auto; /* Maintain aspect ratio */
+/* Product Head Styling */
+.product-head {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    color: #0a27c7;
+}
+
+/* Product Image Styling */
+.product11 img, .product12 img, .product13 img, 
+.product21 img, .product22 img, .product31 img, .product32 img,
+.product41 img, .product42 img, .product44 img, .product45 img,
+.product46 img, .product47 img, .product48 img, .product49 img, 
+.product410 img, .product411 img, .product412 img, .product413 img, 
+.product414 img, .product415 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-    border-radius: 8px 8px 0 0; /* Rounded top corners */
 }
 
-/* Product title styling */
-.product h2 {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 10px 0;
+/* Sub-Product Head Styling */
+.sub-product-head {
+    padding: 10px;
+    font-size: 1rem;
+    color: #444;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Buttons styling */
-.product a {
+/* Buttons/Links Styling */
+.hole a {
     display: inline-block;
-    margin: 8px 5px;
-    padding: 8px 15px;
-    color: #fff; /* White text for buttons */
-    background-color: #3173ba; /* Blue background */
+    margin: 10px 5px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
     text-decoration: none;
+    background-color: #3557a5;
     border-radius: 5px;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.product a:hover {
-    background-color: #20c325; /* Darker blue on hover */
+.hole a:hover {
+    background-color: #4da64b;
+    transform: scale(1.05);
 }
 
-/* Responsive design for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .main-head h1 {
-        font-size: 2rem; /* Adjust font size for smaller screens */
+    .product1, .product2, .product3, .product4 {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .product {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller grid columns */
+    .product11, .product12, .product13, 
+    .product21, .product22, .product31, .product32,
+    .product41, .product42, .product44, .product45,
+    .product46, .product47, .product48, .product49, 
+    .product410, .product411, .product412, .product413, 
+    .product414, .product415 {
+        width: 90%;
+    }
+}
+
+
+
+/* footer */
+footer {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333333; /* Dark text for readability */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    padding: 40px 20px;
+    text-align: left;
+}
+
+/* Footer Flexbox Layout */
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+/* Address Section */
+.address {
+    width: 45%; /* Address section takes 45% width */
+    margin-bottom: 20px;
+}
+
+.address h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #003366; /* Dark blue for headings */
+    font-weight: bold;
+}
+
+.address i {
+    font-size: 18px;
+    color: #007bff; /* Blue color for icons */
+    margin-right: 8px;
+    display: inline-flex; /* Ensures the icon stays on the same line as the text */
+    align-items: center; /* Vertically centers the icon with text */
+}
+
+.address p {
+    font-size: 16px;
+    color: #555555; /* Slightly grey for text */
+    margin: 5px 0;
+    display: inline-flex; /* Ensures text stays on the same line as the icon */
+    align-items: center; /* Vertically centers the text with the icon */
+}
+
+.address i a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.address i a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Business Hours Section */
+.timing {
+    width: 45%; /* Business hours section takes 45% width */
+    margin-bottom: 20px;
+}
+
+.timing h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #003366; /* Dark blue for headings */
+    font-weight: bold;
+}
+
+.timing p {
+    font-size: 16px;
+    color: #555555; /* Grey text */
+}
+
+/* Bottom Copyright Section */
+footer > div:last-child {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: normal;
+    color: #888888; /* Light grey for copyright text */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .foot {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center;
     }
 
-    .product > div {
-        padding: 10px; /* Adjust padding for smaller screens */
+    .address, .timing {
+        width: 100%; /* Full width on smaller screens */
     }
 
-    .product h2 {
-        font-size: 1rem; /* Smaller title font */
+    footer {
+        padding: 30px 15px; /* Adjust padding for smaller screens */
     }
 
-    .product a {
-        font-size: 12px; /* Adjust button size */
-        padding: 6px 10px;
+    .address h1, .timing h1 {
+        font-size: 20px; /* Smaller headings on mobile */
+    }
+
+    .address p, .timing p {
+        font-size: 14px; /* Adjust text size for mobile */
     }
 }
