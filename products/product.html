@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product-Details</title>
+    <title>Product and Service</title>
     <link rel="icon" href="../logo/WhatsApp Image 2023-08-25 at 16.53.38.jpg">
     <link rel="stylesheet" href="product.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div>
-        <header class="main-container">
-            <img src="../logo/WhatsApp Image 2023-08-25 at 16.53.38.jpg" alt="Srinivas Power System">
-            <i class="fa-solid fa-house"><a href="../index.html">Home</a></i> 
-            <i class="fa-solid fa-address-card"><a href="../about_page/about.html">About</a></i> 
-            <i class="fa-brands fa-product-hunt"><a href="../products/product.html">Product</a></i>
-            <i class="fa-solid fa-phone"><a href="../contact/contact.html">Contact Us</a></i>
-        </header>
-    </div>
+    <header class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand d-flex align-items-center">
+                <img src="../logo/WhatsApp Image 2023-08-25 at 16.53.38.jpg" alt="Srinivas Power System" class="me-2" style="height: 50px;">
+                <span>Srinivas Power System</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about_page/about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../products/product.html"><i class="fa-brands fa-product-hunt"></i> Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact/contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <div class="main-head">
         <h1>Srinivas Power System Products and Service</h1>
     </div>
@@ -46,7 +56,7 @@
            <a href="../contact/contact.html">Contact</a>
         </div>
     </div>
-            <!-- product-2 -->
+           
             <div class="product2">
                 <h2 class="product-head">Electrical Panel</h2>
                 <div class="product21">
@@ -62,7 +72,7 @@
                    <a href="../contact/contact.html">Contact</a>
                 </div>
             </div>
-                <!-- product-3 -->
+                
                 <div class="product3">
                     <h2 class="product-head">Control Panel</h2>
                     <div class="product31">
@@ -79,7 +89,7 @@
                     </div>
                 </div>
 
-            <!-- product-4 -->
+       
 
             <div class="product4">
                 <h2 class="product-head">Tripping Coil</h2>
@@ -183,29 +193,34 @@
             </div>
         </div>
 
-        <!-- footer -->
+    
 
-       <footer>
-            <div class="foot">
-                <div class="address">
-                    <h1>Our Office</h1>
-                    <i class="fa-solid fa-location-dot"> </i>Reg Off # 06, Sadguru Heights Apt, 
-                        Nr Reliance Petrol Pump, Pipe Line Road, Satpur MIDC Industrial Area, Nashik,
-                         Maharashtra- 422 007 India<br>
-                    <i class="fa-solid fa-phone"></i><p>+91 93250 04426</p><br>
-                    <i class="fa-solid fa-message"></i><p>srinivaspowersystem@gmail.com</p><br>
-                    <i class="fa-brands fa-linkedin"></i><p><a href="https://www.linkedin.com/in/srinivas-power-system-276061b6/" target="_blank">Srinivas Power System</a></p><br>
-                    <i class="fa-solid fa-cart-shopping"></i><p><a href="https://www.indiamart.com/srinivas-power-system/?srsltid=AfmBOoqYVkIFzJAjJVpLK93JzU-xemf7R1jLQU3biZfVdiD4CCxJqhh6">Indiamart</a></p><br>
-                    <i class="fa-solid fa-note-sticky"></i><p><a href="../contact/contact.html">Get Best Quote</a></p>
-           <br>
+        <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Our Office</h5>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i> Reg Off # 06, Sadguru Heights Apt, Nr Reliance Petrol Pump, Pipe Line Road, Satpur MIDC Industrial Area, Nashik, Maharashtra- 422 007 India
+                    </p>
+                    <p><i class="fa-solid fa-phone"></i> +91 93250 04426</p>
+                    <p><i class="fa-solid fa-envelope"></i> srinivaspowersystem@gmail.com</p>
+                    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/srinivas-power-system-276061b6/" target="_blank" class="text-white">Srinivas Power System</a></p>
+                    <p><i class="fa-solid fa-cart-shopping"></i> <a href="https://www.indiamart.com/srinivas-power-system/" target="_blank" class="text-white">Indiamart</a></p>
                 </div>
-                <div class="timing">
-                  <h1>  Business Hours</h1>
-                  <p><b>Monday - Saturday </b><br>9:00AM - 6:00PM</p>
-                  <p><b>Sunday</b><br>Closed</p>
+                <div class="col-md-6">
+                    <h5>Business Hours</h5>
+                    <p><strong>Monday - Saturday:</strong> 9:00 AM - 6:00 PM</p>
+                    <p><strong>Sunday:</strong> Closed</p>
                 </div>
-                </div>
-                <div>&copy;Srinivas Power System,All Right Reserved.</div>
-        </footer>
-        </body>
+            </div>
+            <div class="text-center mt-3">
+                &copy; 2024 Srinivas Power System, All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

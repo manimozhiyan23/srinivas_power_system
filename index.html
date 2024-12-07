@@ -1,135 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Srinivas Power System</title>
     <link rel="icon" href="./logo/WhatsApp Image 2023-08-25 at 16.53.38.jpg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+          integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .navbar-brand img {
+            max-width: 120px;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .features-container .card img {
+            height: 150px;
+            object-fit: contain;
+        }
+        .client-logos img {
+            max-height: 100px;
+            object-fit: contain;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+        }
+        footer a {
+            color: #ddd;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="/index.html" method="GET">
-        <div>
-            <header class="main-container">
-                <img src="./logo/WhatsApp Image 2023-08-25 at 16.53.38.jpg" alt="Srinivas Power System">
-                <i class="fa-solid fa-house"><a href="/index.html">Home</a></i>
-                <i class="fa-solid fa-address-card"> <a href="/about_page/about.html">About</a></i>
-                <i class="fa-brands fa-product-hunt"><a href="./products/product.html">Product</a></i>
-               <i class="fa-solid fa-phone"><a href="/contact/contact.html">Contact Us</a></i>
-            </header>
 
-            <div class="main-image">
-                <img src="https://www.baronpower.com/wp-content/themes/baron-power/assets/images/banner/banner-1.jpg" alt="">
-                <img src="" alt="">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./logo/WhatsApp Image 2023-08-25 at 16.53.38.jpg" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about_page/about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./products/product.html"><i class="fa-brands fa-product-hunt"></i> Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact/contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                </ul>
             </div>
-            <div class="sub-head">
-                <div class="left-content">
-                    <h3>Featured Products</h3>
-                    <h1>We're thriving and building better, stronger products</h1>
-                </div>
-                <div class="right-content">
-                    <p>
-                        Baron Power develops and manufactures power quality products and energy management systems from 1995.
+        </div>
+    </nav>
 
-                        For the past 25+ years, Baron Power means quality and reliability. The customers have trusted Baron Power.</p>
-                </div>
+    <!-- Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.baronpower.com/wp-content/themes/baron-power/assets/images/banner/banner-1.jpg" class="d-block w-100" alt="Banner 1">
             </div>
-            <div class="features-container">
-                <div class="features-product" id="product1">
-                <img src="./image/frako-capacitors.jpg" alt="Capacitor"><p><b>Frako Capacitors</b></p>
-                <a href="./capacitor para/capacitor.html">SEE MORE <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="features-product" id="product2">
-                    <img src="./image/relays.jpg" alt="Relay"><p><b>Relays</b></p>
-                    <a href="./relay_para/relay.html">SEE MORE <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="features-product" id="product3">
-                    <img src="./image/apfc-panels.jpg" alt="APFC-Panels"><p><b>APFC Panels</b></p>
-                    <a href="./apfc_panel/panel.html">SEE MORE <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="features-product" id="product4">
-                    <img src="./image/harmonic-filters.jpg" alt="Harmonic Filter"><p><b>Harmonic Filters</b></p>
-                    <a href="./harmonic_filter/filter.html  ">SEE MORE <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
+            <div class="carousel-item">
+                <img src="./image/banner.webp" class="d-block w-100" alt="Banner 2">
             </div>
-       
-    </form>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
 
-        <div class="company-history">
+    <!-- Welcome Section -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
             <h1>Welcome To Srinivas Power System</h1>
-            <h3><b>Srinivas Power System, develops & manufactures power quality products & energy management systems.</b></h3>
-         
-            <!-- HISTORY OF THE COMPANY -->
-
-            <p>Srinivas Power System  - Your Trusted Power Quality Partner
-                SPS is your trusted partner in delivering precise power quality solutions. With years of expertise and innovation, we offer reliable and robust solutions, including Active Filters, Static Var generators, Hybrid filters, RTPFCs, and LT &HT APFCs, Servo Voltage Controller ect,.to a global clientele spanning India, Saudi Arabia, Nepal and beyond.
-                </p>
-                 <p>FAs leaders in power quality solutions for the steel, cement, and Textile, Metro industries, we’ve successfully installed over 10000kVAr, transforming power for diverse processes. Our solutions, ranging from 10000 kVAr to 10000 MVAr, are custom-designed to meet specific needs. Backed by DSIR-recognized in-house R&D, we ensure optimal power quality to drive your business success.</p>
+            <p class="lead">Developing & manufacturing power quality products & energy management systems for over 25 years.</p>
+            <p>SPS is your trusted partner in delivering precise power quality solutions with a global reach across industries like steel, cement, textiles, and metro systems.</p>
         </div>
-        
+    </section>
 
-        <div class="client">
-            <h1>Our Clients</h1>
-            <hr><br>
-            <div>
-                <img src="./image/ultra tech.jpg" alt="Ultra Tech Cement">
-                <img src="./image/indian oil.jpg" alt="">
-                <img src="./image/suzuki.webp" alt="">
-                <img src="./image/thyssenkrupp.png" alt="">
-                <img src="./image/bosch2.png" alt="">
-                <img src="./image/UPL-Logo.webp" alt="">
-                <img src="./image/adani.jpg" alt="">
-                <img src="./image/inox.jpg" alt="">
-                <img src="./image/pvr.png" alt="">
-                <img src="./image/lodha.png" alt="">
-                <img src="./image/jsw.jpg" alt="">
-                <img src="./image/shyam steel.png" alt="">
-                <img src="./image/polygenta.png" alt="">
-                <img src="./image/deepak phenolics.jpg" alt="">
-                <img src="./image/ANAND.png" alt="">
-                <img src="./image/mp birla group.jpg" alt="">
-                <img src="./image/jagdambasteels_logo.jpg" alt="">
-                <img src="./image/lalit.jpg" alt="">
-                <img src="./image/sumeet.jpg" alt="">
-                <img src="./image/bedmutha.png" alt="">
-                <img src="./image/toray.png" alt="">            
-                <img src="./image/croma.webp" alt="">
-                <img src="./image/mackeil.png" alt="">
-                <img src="./image/fresco.jpg" alt="">
-                <img src="./image/navayuga.png" alt="">
-                <img src="./image/mahle.jpg" alt="">
-                <img src="./image/suryalakshmi.jpg" alt="">
-                <img src="./image/benzo.avif" alt="">    
-                <img src="./image/sangam.jpg" alt="">
-                <img src="./image/ramsons.jpg" alt="">
+    <!-- Featured Products -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2>Featured Products</h2>
+            <p class="mb-4">We're thriving and building better, stronger products.</p>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/frako-capacitors.jpg" class="card-img-top" alt="Frako Capacitors">
+                        <div class="card-body">
+                            <h5 class="card-title">Frako Capacitors</h5>
+                            <a href="./capacitor para/capacitor.html" class="btn btn-primary">See More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/relays.jpg" class="card-img-top" alt="Relays">
+                        <div class="card-body">
+                            <h5 class="card-title">Relays</h5>
+                            <a href="./relay_para/relay.html" class="btn btn-primary">See More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/apfc-panels.jpg" class="card-img-top" alt="APFC Panels">
+                        <div class="card-body">
+                            <h5 class="card-title">APFC Panels</h5>
+                            <a href="./apfc_panel/panel.html" class="btn btn-primary">See More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./image/harmonic-filters.jpg" class="card-img-top" alt="Harmonic Filters">
+                        <div class="card-body">
+                            <h5 class="card-title">Harmonic Filters</h5>
+                            <a href="./harmonic_filter/filter.html" class="btn btn-primary">See More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <br>
-           <hr>
-
         </div>
-        <footer>
-            <div class="foot">
-                <div class="address">
-                    <h1>Our Office</h1>
-                    <i class="fa-solid fa-location-dot"> </i>Reg Off # 06, Sadguru Heights Apt, 
-                        Nr Reliance Petrol Pump, Pipe Line Road, Satpur MIDC Industrial Area, Nashik,
-                         Maharashtra- 422 007 India<br>
-                    <i class="fa-solid fa-phone"></i><p>+91 93250 04426</p><br>
-                    <i class="fa-solid fa-message"></i><p>srinivaspowersystem@gmail.com</p><br>
-                    <i class="fa-brands fa-linkedin"></i><p><a href="https://www.linkedin.com/in/srinivas-power-system-276061b6/" target="_blank">Srinivas Power System</a></p><br>
-                    <i class="fa-solid fa-cart-shopping"></i><p><a href="https://www.indiamart.com/srinivas-power-system/?srsltid=AfmBOoqYVkIFzJAjJVpLK93JzU-xemf7R1jLQU3biZfVdiD4CCxJqhh6">Indiamart</a></p>
-           <br>
-                </div>
-                <div class="timing">
-                  <h1>  Business Hours</h1>
-                  <p><b>Monday - Saturday </b><br>9:00AM - 6:00PM</p>
-                  <p><b>Sunday</b><br>Closed</p>
-                </div>
-                </div>
-                <div>&copy;Srinivas Power System,All Right Reserved.</div>
-        </footer>
+    </section>
 
+    <!-- Clients Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Our Clients</h2>
+            <hr>
+            <div class="row row-cols-2 row-cols-md-4 g-4 client-logos">
+                <div class="col"><img src="./image/ultra tech.jpg" class="img-fluid" alt="Ultra Tech Cement"></div>
+                <div class="col"><img src="./image/indian oil.jpg" class="img-fluid" alt="Indian Oil"></div>
+                <div class="col"><img src="./image/suzuki.webp" class="img-fluid" alt="Suzuki"></div>
+                <div class="col"><img src="./image/thyssenkrupp.png" class="img-fluid" alt="ThyssenKrupp"></div>
+                <div class="col"><img src="./image/bosch2.png" class="img-fluid" alt="Bosch"></div>
+                <div class="col"><img src="./image/UPL-Logo.webp" class="img-fluid" alt="UPL"></div>
+                <div class="col"><img src="./image/adani.jpg" class="img-fluid" alt="Adani"></div>
+                <div class="col"><img src="./image/inox.jpg" class="img-fluid" alt="INOX"></div>
+                <div class="col"><img src="./image/pvr.png" class="img-fluid" alt="PVR"></div>
+                <div class="col"><img src="./image/lodha.png" class="img-fluid" alt="Lodha"></div>
+                <div class="col"><img src="./image/jsw.jpg" class="img-fluid" alt="JSW"></div>
+                <div class="col"><img src="./image/shyam steel.png" class="img-fluid" alt="Shyam Steel"></div>
+                <div class="col"><img src="./image/polygenta.png" class="img-fluid" alt="Polygenta"></div>
+                <div class="col"><img src="./image/deepak phenolics.jpg" class="img-fluid" alt="Deepak Phenolics"></div>
+                <div class="col"><img src="./image/ANAND.png" class="img-fluid" alt="Anand"></div>
+                <div class="col"><img src="./image/mp birla group.jpg" class="img-fluid" alt="MP Birla Group"></div>
+                <div class="col"><img src="./image/jagdambasteels_logo.jpg" class="img-fluid" alt="Jagdamba Steels"></div>
+                <div class="col"><img src="./image/lalit.jpg" class="img-fluid" alt="The Lalit"></div>
+                <div class="col"><img src="./image/sumeet.jpg" class="img-fluid" alt="Sumeet"></div>
+                <div class="col"><img src="./image/bedmutha.png" class="img-fluid" alt="Bedmutha"></div>
+                <div class="col"><img src="./image/toray.png" class="img-fluid" alt="Toray"></div>
+                <div class="col"><img src="./image/croma.webp" class="img-fluid" alt="Croma"></div>
+                <div class="col"><img src="./image/mackeil.png" class="img-fluid" alt="Mackeil"></div>
+                <div class="col"><img src="./image/fresco.jpg" class="img-fluid" alt="Fresco"></div>
+                <div class="col"><img src="./image/navayuga.png" class="img-fluid" alt="Navayuga"></div>
+                <div class="col"><img src="./image/mahle.jpg" class="img-fluid" alt="Mahle"></div>
+                <div class="col"><img src="./image/suryalakshmi.jpg" class="img-fluid" alt="Suryalakshmi"></div>
+                <div class="col"><img src="./image/benzo.avif" class="img-fluid" alt="Benzo"></div>
+                <div class="col"><img src="./image/sangam.jpg" class="img-fluid" alt="Sangam"></div>
+                <div class="col"><img src="./image/ramsons.jpg" class="img-fluid" alt="Ramsons"></div>
+            
+                <!-- Add more client logos -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Our Office</h5>
+                    <p><i class="fa-solid fa-location-dot"></i> Reg Off #06, Sadguru Heights Apt, Pipe Line Road, Nashik, Maharashtra - 422 007, India</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 93250 04426</p>
+                    <p><i class="fa-solid fa-envelope"></i> srinivaspowersystem@gmail.com</p>
+                    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/srinivas-power-system-276061b6/" target="_blank" class="text-white">Srinivas Power System</a></p>
+                    <p><i class="fa-solid fa-cart-shopping"></i> <a href="https://www.indiamart.com/srinivas-power-system/" target="_blank" class="text-white">Indiamart</a></p>
+               
+                </div>
+                <div class="col-md-6">
+                    <h5>Business Hours</h5>
+                    <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">&copy; Srinivas Power System, All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
